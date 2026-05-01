@@ -1,7 +1,25 @@
-tensorflow
-numpy
-pandas
-matplotlib
-scikit-learn
-seaborn
-Pillow
+# =============================================================================
+# requirements.txt — Brain Tumor MRI Classifier
+# =============================================================================
+# This file lists all Python packages the project needs.
+# Install all dependencies with one command:
+#   pip install -r requirements.txt
+# =============================================================================
+
+# Deep learning framework — used to build, train, and run the neural network
+tensorflow>=2.10.0
+
+# Scientific computing — fast array operations, used throughout the codebase
+numpy>=1.23.0
+
+# Data visualisation — all plots, charts, and image displays
+matplotlib>=3.6.0
+
+# Statistical visualisation — used for the confusion matrix heatmap
+seaborn>=0.12.0
+
+# Machine learning utilities — confusion matrix, ROC curves, classification report
+scikit-learn>=1.2.0
+
+# Image processing utilities (Pillow is required by Keras for loading images)
+Pillow>=9.0.0

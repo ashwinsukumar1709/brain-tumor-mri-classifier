@@ -1,0 +1,42 @@
+# =============================================================================
+# .gitignore — Brain Tumor MRI Classifier
+# Files and folders listed here will NOT be uploaded to GitHub.
+# =============================================================================
+
+# ── Dataset (too large for GitHub — download from Kaggle separately) ──
+data/
+
+# ── Trained model weights (large binary files) ──
+results/*.h5
+results/*.pb
+
+# ── Python cache files (auto-generated, not needed on GitHub) ──
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environment folders ──
+venv/
+env/
+.env/
+ENV/
+
+# ── Jupyter notebook checkpoints ──
+.ipynb_checkpoints/
+
+# ── IDE and OS files ──
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# ── Log files ──
+*.log
+logs/
+
+# ── Keep results folder but ignore model weights ──
+!results/
+!results/*.png
+!results/README.md
